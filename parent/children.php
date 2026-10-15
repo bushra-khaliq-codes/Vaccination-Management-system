@@ -180,10 +180,10 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
 
         <div class="d-flex justify-content-end gap-2">
-            <a href="<?= BASE_URL ?>/parent/children.php" class="btn btn-outline-secondary">Cancel</a>
             <button type="submit" class="btn btn-success">
                 <i class="fa-solid fa-save me-1"></i> <?= $editChild ? 'Update Child Record' : 'Save & Register Child' ?>
             </button>
+            <a href="<?= BASE_URL ?>/parent/children.php" class="btn btn-outline-secondary">Cancel</a>
         </div>
     </form>
 </div>

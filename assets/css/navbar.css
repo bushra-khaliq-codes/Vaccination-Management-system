@@ -278,7 +278,10 @@
 
 /*  for Small screens */
 @media (max-width: 400px) {
-  .user-account-dropdown { min-width: 240px; }
+  .user-account-dropdown { min-width: 240px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /*  Reduced motion  */
