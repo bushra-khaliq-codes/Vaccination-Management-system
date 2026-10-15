@@ -1,0 +1,164 @@
+/* Shared visual enhancements for dashboard */
+:root {
+  --portal-bg: #f3f8ff;
+  --portal-surface: rgba(255, 255, 255, 0.9);
+  --portal-surface-strong: #ffffff;
+  --portal-line: rgba(148, 163, 184, 0.25);
+  --portal-shadow: 0 18px 36px -28px rgba(15, 23, 42, 0.38);
+  --portal-shadow-soft: 0 10px 24px -20px rgba(15, 23, 42, 0.26);
+  --portal-gradient: linear-gradient(135deg, #eff6ff 0%, #eefbf6 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.08), transparent 20rem),
+    linear-gradient(180deg, #f5f9ff 0%, #edf5ff 35%, #f8fafc 100%);
+}
+
+.page-wrapper {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.page-section,
+.dashboard-container,
+.site-vertical-spacing-8 {
+  animation: fadeUp 0.45s ease-out both;
+}
+
+.page-header-bar,
+.section-header,
+.notification-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.page-title,
+.section-title,
+.notification-panel-title,
+.greeting-title,
+.welcome-title {
+  letter-spacing: -0.04em;
+}
+
+.page-header-bar {
+  background: var(--portal-surface);
+  border: 1px solid var(--portal-line);
+  border-radius: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--portal-shadow-soft);
+  backdrop-filter: blur(10px);
+}
+
+.page-subtitle,
+.section-subtitle,
+.greeting-subtitle,
+.site-text-color-slate-500 {
+  line-height: 1.6;
+}
+
+.action-buttons,
+.welcome-actions,
+.child-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-danger,
+.btn-approve,
+.btn-reject,
+.btn-ghost,
+.quick-op-link,
+.welcome-btn-primary,
+.welcome-btn-secondary,
+.child-action-btn,
+.child-action-btn-primary,
+.alert-action-link,
+.login-submit,
+.register-submit-brand,
+.register-submit-indigo {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-danger:hover,
+.btn-approve:hover,
+.btn-reject:hover,
+.quick-op-link:hover,
+.welcome-btn-primary:hover,
+.welcome-btn-secondary:hover,
+.child-action-btn:hover,
+.child-action-btn-primary:hover,
+.alert-action-link:hover,
+.login-submit:hover,
+.register-submit-brand:hover,
+.register-submit-indigo:hover {
+  transform: translateY(-1px);
+}
+
+.data-table-wrapper,
+.quick-ops-panel,
+.notification-panel,
+.health-tip-box,
+.child-card,
+.stat-card,
+.login-card,
+.register-card,
+.empty-state {
+  box-shadow: var(--portal-shadow-soft);
+}
+
+.table-row:hover {
+  background: linear-gradient(90deg, rgba(239, 246, 255, 0.75), rgba(240, 253, 244, 0.45));
+}
+
+.empty-state {
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,250,252,0.96));
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .page-wrapper {
+    padding-top: 1.5rem;
+  }
+
+  .page-header-bar,
+  .section-header,
+  .notification-header {
+    display: block;
+  }
+
+  .action-buttons,
+  .welcome-actions {
+    width: 100%;
+  }
+
+  .action-buttons > *,
+  .welcome-actions > * {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}

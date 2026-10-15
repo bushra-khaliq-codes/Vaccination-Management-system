@@ -1,0 +1,174 @@
+
+/* Admin header banner*/
+.admin-header-banner {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #4338ca 100%);
+  color: #ffffff;
+  border-radius: var(--radius-2xl);
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.75rem;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: all 0.3s ease;
+}
+.admin-header-banner:hover{
+  transform: rotateX(180deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 768px) {
+  .admin-header-banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.admin-header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+  backdrop-filter: blur(4px);
+  margin-bottom: 0.5rem;
+}
+
+.admin-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.25rem;
+}
+
+.admin-subtitle {
+  font-size: 0.875rem;
+  color: #cbd5e1;
+  margin-bottom: 0;
+}
+
+/* Status Filter Pill*/
+.filter-pills-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.filter-pill {
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.filter-pill:hover {
+  color: var(--text-main);
+  border-color: #cbd5e1;
+  background: var(--bg-subtle);
+}
+
+.filter-pill.active {
+  background-color: var(--medical-purple);
+  border-color: var(--medical-purple);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(124, 58, 237, 0.2);
+}
+
+.filter-pill.active.pill-pending {
+  background-color: var(--status-warning);
+  border-color: var(--status-warning);
+   width: 100px;
+  height: 30px;
+}
+
+.filter-pill.active.pill-approved {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.filter-pill.active.pill-completed {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+.filter-pill.active.pill-rejected {
+  background-color: var(--status-danger);
+  border-color: var(--status-danger);
+}
+
+/* Request Action Buttons*/
+.btn-action-approve {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.btn-action-approve:hover {
+  background-color: #15803d;
+  color: #ffffff;
+  border-color: #15803d;
+}
+
+.btn-action-reject {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.2s ease;
+}
+
+.btn-action-reject:hover {
+  background-color: #b91c1c;
+  color: #ffffff;
+  border-color: #b91c1c;
+}
+
+/* Modal styling  */
+.modal-content-custom {
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-float);
+  overflow: hidden;
+}
+
+.modal-header-custom {
+  background-color: var(--bg-subtle);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem 1.5rem;
+}
+
+/* admin logout icon  */
+.btn-logout {
+  border: none;
+  background-color: transparent;
+}

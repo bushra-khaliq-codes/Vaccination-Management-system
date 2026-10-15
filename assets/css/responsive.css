@@ -1,0 +1,93 @@
+/*
+ * Responsive Stylesheet
+ */
+
+/* Mobile Fine-Tuning (< 768px) */
+@media (max-width: 767.98px) {
+  .page-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .page-title {
+    font-size: 1.25rem;
+  }
+
+  .admin-header-banner,
+  .parent-welcome-banner,
+  .hospital-banner {
+    padding: 1.25rem;
+    border-radius: var(--radius-xl);
+  }
+
+  .parent-welcome-title,
+  .admin-title,
+  .hospital-title {
+    font-size: 1.35rem;
+  }
+
+  .search-box-wrapper {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .form-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+
+  .table-custom th,
+  .table-custom td {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .certificate-canvas {
+    padding: 1.25rem;
+  }
+
+}
+
+/* Tablet (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .page-wrapper {
+    padding-top: 1.25rem;
+  }
+}
+
+/* Print Utilities */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .no-print,
+  .site-navbar,
+  .navbar-wave-separator,
+  .site-footer,
+  .btn,
+  .search-box-wrapper,
+  .filter-pills-bar,
+  .flash-alert {
+    display: none !important;
+  }
+
+  .table-card {
+    border: 1px solid #000000 !important;
+    box-shadow: none !important;
+  }
+
+  .table-custom th {
+    background-color: #f1f5f9 !important;
+    color: #000000 !important;
+    border-bottom: 2px solid #000000 !important;
+  }
+}
