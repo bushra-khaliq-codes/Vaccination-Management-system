@@ -1,7 +1,7 @@
 <?php
-/*
- * Hospital - Update Vaccine Status Controller & Clinical Form
- */
+/** 
+//  * Hospital - Update Vaccine Status Controller & Clinical Form
+//  */
 
 require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/../includes/functions.php';
